@@ -1,5 +1,6 @@
 \documentclass{article}
-\usepackage{verbatim}%
+\usepackage{verbatim}
+\usepackage{multicol}
 
 \newenvironment{album}[1]% environment name
 {% begin code
@@ -10,12 +11,12 @@
 
 \newenvironment{song}[1]% environment name
 {% begin code
-  \par\vspace{\baselineskip}\noindent
-  \textbf{#1}\begin{itshape}%
-  \par\vspace{\baselineskip}\noindent\ignorespaces
+  \subsection*{\textbf{#1}}
+  \begin{multicols*}{2}
 }%
 {% end code
-  \end{itshape}\ignorespacesafterend
+  \end{multicols*}
+  \newpage
 }
 
 \newenvironment{couplet} %
@@ -33,11 +34,366 @@
 {% end code
   \endverbatim
 }
+\newenvironment{pont} %
+{% begin code
+  \verbatim
+}%
+{% end code
+  \endverbatim
+}
 
 \begin{document}
 
+
+\begin{album}{Fleur de peau}
+
+
+%   ::::    ::::  :::::::::: :::        ::::::::  ::::::::: ::::::::::: ::::::::::     
+% +:+:+: :+:+:+ :+:        :+:       :+:    :+: :+:    :+:    :+:     :+:            
+% +:+ +:+:+ +:+ +:+        +:+       +:+    +:+ +:+    +:+    +:+     +:+            
+% +#+  +:+  +#+ +#++:++#   +#+       +#+    +:+ +#+    +:+    +#+     +#++:++#       
+% +#+       +#+ +#+        +#+       +#+    +#+ +#+    +#+    +#+     +#+            
+% #+#       #+# #+#        #+#       #+#    #+# #+#    #+#    #+#     #+#        #+# 
+% ###       ### ########## ########## ########  ######### ########### ########## ### 
+\begin{song}{Mélodie.}
+  Instrumental.
+\end{song}
+
+
+% :::        :::::::::: ::::::::       :::            :::     :::::::::  ::::    ::::  :::::::::: ::::::::       :::::::::  ::::::::::      ::::::::::: ::::::::  ::::    :::       ::::::::   ::::::::  :::::::::: :::    ::: :::::::::  
+% :+:        :+:       :+:    :+:      :+:          :+: :+:   :+:    :+: +:+:+: :+:+:+ :+:       :+:    :+:      :+:    :+: :+:                 :+:    :+:    :+: :+:+:   :+:      :+:    :+: :+:    :+: :+:        :+:    :+: :+:    :+: 
+% +:+        +:+       +:+             +:+         +:+   +:+  +:+    +:+ +:+ +:+:+ +:+ +:+       +:+             +:+    +:+ +:+                 +:+    +:+    +:+ :+:+:+  +:+      +:+        +:+    +:+ +:+        +:+    +:+ +:+    +:+ 
+% +#+        +#++:++#  +#++:++#++      +#+        +#++:++#++: +#++:++#:  +#+  +:+  +#+ +#++:++#  +#++:++#++      +#+    +:+ +#++:++#            +#+    +#+    +:+ +#+ +:+ +#+      +#+        +#+    +:+ +#++:++#   +#+    +:+ +#++:++#:  
+% +#+        +#+              +#+      +#+        +#+     +#+ +#+    +#+ +#+       +#+ +#+              +#+      +#+    +#+ +#+                 +#+    +#+    +#+ +#+  +#+#+#      +#+        +#+    +#+ +#+        +#+    +#+ +#+    +#+ 
+% #+#        #+#       #+#    #+#      #+#        #+#     #+# #+#    #+# #+#       #+# #+#       #+#    #+#      #+#    #+# #+#                 #+#    #+#    #+# #+#   #+#+#      #+#    #+# #+#    #+# #+#        #+#    #+# #+#    #+# 
+% ########## ########## ########       ########## ###     ### ###    ### ###       ### ########## ########       #########  ##########          ###     ########  ###    ####       ########   ########  ##########  ########  ###    ### 
+\begin{song}{Les larmes de ton coeur}
+
+\begin{couplet}
+Un soir
+Une impression étrange
+Si tard
+Est-ce démon ou ange ?  
+\end{couplet}
+\begin{couplet}
+Soudain
+Le mur se révèle
+Une fin
+D'une période si belle ?
+\end{couplet}
+\begin{refrain}
+Je n'ai pas pu ressentir
+Ton âme en peine
+J'espère que tu m'entends t'écrire
+Que j'aimerais te faire rire
+\end{refrain}
+\begin{couplet}
+Peut-être
+Penses-tu que je suis loin de tout ça
+Sûrement pas
+\end{couplet}
+\begin{couplet}
+Lumière
+Trouves-tu ton guide ton
+Frère
+Qui te conduira ?
+\end{couplet}
+\begin{refrain}
+Espoir
+Tout est devenu si noir
+Autour de toi
+Pense que tout n'est pas perdu
+Laisse faire l'inconnu
+\end{refrain}
+\begin{refrain}
+Sache
+Que toutes nos lueurs
+Sont là pour toi
+Laisse couler sans effort
+Les larmes de ton corps
+\end{refrain}
+\begin{refrain}
+Nous connaissons tous ce voile
+Indélébile
+Viens nous retrouver sans peur
+Soigner les larmes de ton cœur
+
+S'élever un jour meilleur…
+\end{refrain}
+\end{song}
+
+% :::::::::  :::    ::: :::::::::::        ::: ::::::::::: ::::::::::: ::::    ::::  ::::::::::       :::::::: ::::::::::: :::     ::::    ::: :::::::::   ::::::::        :::::::: ::::::::::: ::::::::::: :::        :::        :::   
+% :+:    :+: :+:    :+:     :+:           :+:      :+:         :+:     +:+:+: :+:+:+ :+:             :+:    :+:    :+:   :+: :+:   :+:+:   :+: :+:    :+: :+:    :+:      :+:    :+:    :+:         :+:     :+:        :+:         :+:  
+% +:+    +:+ +:+    +:+     +:+          +:+       +:+         +:+     +:+ +:+:+ +:+ +:+             +:+           +:+  +:+   +:+  :+:+:+  +:+ +:+    +:+ +:+             +:+           +:+         +:+     +:+        +:+          +:+ 
+% +#++:++#+  +#+    +:+     +#+          +#+       +#+         +#+     +#+  +:+  +#+ +#++:++#        +#++:++#++    +#+ +#++:++#++: +#+ +:+ +#+ +#+    +:+ +#++:++#++      +#++:++#++    +#+         +#+     +#+        +#+          +#+ 
+% +#+    +#+ +#+    +#+     +#+          +#+       +#+         +#+     +#+       +#+ +#+                    +#+    +#+ +#+     +#+ +#+  +#+#+# +#+    +#+        +#+             +#+    +#+         +#+     +#+        +#+          +#+ 
+% #+#    #+# #+#    #+#     #+#           #+#      #+#         #+#     #+#       #+# #+#             #+#    #+#    #+# #+#     #+# #+#   #+#+# #+#    #+# #+#    #+#      #+#    #+#    #+#         #+#     #+#        #+#         #+#  
+% #########   ########      ###            ###     ###     ########### ###       ### ##########       ########     ### ###     ### ###    #### #########   ########        ########     ###     ########### ########## ########## ###   
+\begin{song}{But (Time Stands Still)}
+\begin{couplet}
+I felt I’d everything to win
+Couldn’t stop smiling
+But
+Now I’ve realised the play  
+\end{couplet}
+\begin{couplet}
+Sweetheart let me make you know
+How I think about you
+But
+I try not to bother you again
+\end{couplet}
+\begin{refrain}
+Staying here
+How long will I feel this way ?
+But time stands still
+\end{refrain}
+\begin{couplet}
+I try to convince myself
+That you’re here for me
+But
+I keep feeling alone
+\end{couplet}
+\begin{couplet}
+I was told time will heal me
+Helping my heart beat
+But
+How long will it take me to restore
+\end{couplet}
+\begin{refrain}
+You are the one that I need
+The hole in my heart keeps growing
+When I think about you and him
+I can only try to wait
+But time stands still
+\end{refrain}
+\begin{couplet}
+Day after day shall I find
+some time to break free ?
+But
+My carpe diem has left
+\end{couplet}
+\begin{couplet}
+I know that you will
+Do your best to make me feel I’m real
+But
+My nothing and my everything are away
+\end{couplet}
+\begin{refrain}
+Full time left
+My mind’s obscured by no rest
+Has my love been trapped from nowhere ?
+I can only try to wait
+But time stands still
+\end{refrain}
+\begin{refrain}
+Love spent away
+The hole in my heart keeps emptying
+When I think about you and him
+I can only try to sing
+To help me let out
+This whole deep obsession
+I wait for the sign to begin
+But time stands still
+\end{refrain}
+\end{song}
+
+% ::::::::::: ::::    :::  :::::::: ::::::::::: :::::::::  ::::::::::          :::          :::    ::: ::::::::::: :::        :::        ::::::::::: ::::    :::  ::::::::       ::::    ::::  ::::::::::: ::::    ::: :::::::::  
+%     :+:     :+:+:   :+: :+:    :+:    :+:     :+:    :+: :+:               :+: :+:        :+:   :+:      :+:     :+:        :+:            :+:     :+:+:   :+: :+:    :+:      +:+:+: :+:+:+     :+:     :+:+:   :+: :+:    :+: 
+%     +:+     :+:+:+  +:+ +:+           +:+     +:+    +:+ +:+              +:+   +:+       +:+  +:+       +:+     +:+        +:+            +:+     :+:+:+  +:+ +:+             +:+ +:+:+ +:+     +:+     :+:+:+  +:+ +:+    +:+ 
+%     +#+     +#+ +:+ +#+ +#++:++#++    +#+     +#+    +:+ +#++:++#        +#++:++#++:      +#++:++        +#+     +#+        +#+            +#+     +#+ +:+ +#+ :#:             +#+  +:+  +#+     +#+     +#+ +:+ +#+ +#+    +:+ 
+%     +#+     +#+  +#+#+#        +#+    +#+     +#+    +#+ +#+             +#+     +#+      +#+  +#+       +#+     +#+        +#+            +#+     +#+  +#+#+# +#+   +#+#      +#+       +#+     +#+     +#+  +#+#+# +#+    +#+ 
+%     #+#     #+#   #+#+# #+#    #+#    #+#     #+#    #+# #+#             #+#     #+#      #+#   #+#      #+#     #+#        #+#            #+#     #+#   #+#+# #+#    #+#      #+#       #+#     #+#     #+#   #+#+# #+#    #+# 
+% ########### ###    ####  ######## ########### #########  ##########      ###     ###      ###    ### ########### ########## ########## ########### ###    ####  ########       ###       ### ########### ###    #### #########  
+\begin{song}{Inside a killing mind}
+\begin{couplet}
+He: Tell me the reasons why
+He: Tell me, where did you fly ?
+He: Trust me, I can help you
+He: Just if you speak to me about you
+\end{couplet}
+\begin{couplet}
+She: Hear me, I didn’t mean to do it
+She: That’s not me, I couldn’t have done this insanity
+She: Trust me, I love her like me
+She: She’s in my heart forever but I did it
+\end{couplet}
+\begin{refrain}
+He: Don’t close your eyes
+He: Watch the sunrise
+He: You can cry for her too
+He: Don’t try to escape this world of fear you brought to you
+\end{refrain}
+\begin{couplet}
+She: That night, we were playing
+She: Tonight, I’m wondering
+She: Whether we were looking
+She: For something
+\end{couplet}
+\begin{refrain}
+She: I’d like to cry
+She: Did we ? Would I ?
+He/She: Her beauty won’t shine anymore
+He: Do you really think it is the only reason for ?
+\end{refrain}
+\begin{pont}
+She: Let me remember our crazyness, our illness
+She: My body was there, without any spirit
+She: We are just kidding, I’m going out of my mind
+She: A knife in my bag, hitting a face, killing a goddess
+\end{pont}
+\begin{couplet}
+He: Now you know you killed that girl
+He: Murdered her beauty, destroyed her life
+He: Now you know you will remember
+He: Your inconscious will keep her in mind
+
+He/She: Forever
+\end{couplet}
+
+\end{song}
+
+
+%              ::::::::   ::::::::  :::::::::       :::::::::  ::::::::::       ::::::::  :::::::::  :::   ::: ::::::::::: ::::    :::  ::::::::  
+%             :+:    :+: :+:    :+: :+:    :+:      :+:    :+: :+:             :+:    :+: :+:    :+: :+:   :+:     :+:     :+:+:   :+: :+:    :+: 
+%             +:+        +:+    +:+ +:+    +:+      +:+    +:+ +:+             +:+        +:+    +:+  +:+ +:+      +:+     :+:+:+  +:+ +:+        
+%             :#:        +#+    +:+ +#+    +:+      +#++:++#+  +#++:++#        +#+        +#++:++#:    +#++:       +#+     +#+ +:+ +#+ :#:        
+%             +#+   +#+# +#+    +#+ +#+    +#+      +#+    +#+ +#+             +#+        +#+    +#+    +#+        +#+     +#+  +#+#+# +#+   +#+# 
+% #+# #+# #+# #+#    #+# #+#    #+# #+#    #+#      #+#    #+# #+#             #+#    #+# #+#    #+#    #+#        #+#     #+#   #+#+# #+#    #+# 
+% ### ### ###  ########   ########  #########       #########  ##########       ########  ###    ###    ###    ########### ###    ####  ########  
+\begin{song}{...God be crying}
+\begin{couplet}
+Time passes by
+World spins around
+\end{couplet}  
+\begin{refrain}
+All in all, events fall
+After all, there’s no control  
+\end{refrain}
+\begin{couplet}
+Men dance and sing
+Such desperate means
+
+Swimming against the flow
+They are designed to drawn
+\end{couplet}
+\begin{refrain}
+All in all, time’s leading
+After all, souls keep bleeding
+
+All in all, the end is near
+After all, it’s just a tear
+\end{refrain}
+\end{song}
+
+
+% :::   :::  ::::::::  :::    :::       ::::::::  :::       ::: ::::    :::       ::::::::  :::    ::: :::   ::: 
+% :+:   :+: :+:    :+: :+:    :+:      :+:    :+: :+:       :+: :+:+:   :+:      :+:    :+: :+:   :+:  :+:   :+: 
+%  +:+ +:+  +:+    +:+ +:+    +:+      +:+    +:+ +:+       +:+ :+:+:+  +:+      +:+        +:+  +:+    +:+ +:+  
+%   +#++:   +#+    +:+ +#+    +:+      +#+    +:+ +#+  +:+  +#+ +#+ +:+ +#+      +#++:++#++ +#++:++      +#++:   
+%    +#+    +#+    +#+ +#+    +#+      +#+    +#+ +#+ +#+#+ +#+ +#+  +#+#+#             +#+ +#+  +#+      +#+    
+%    #+#    #+#    #+# #+#    #+#      #+#    #+#  #+#+# #+#+#  #+#   #+#+#      #+#    #+# #+#   #+#     #+#    
+%    ###     ########   ########        ########    ###   ###   ###    ####       ########  ###    ###    ###    
+\begin{song}{You own sky}
+\begin{couplet}
+Take off little fowl, your life began again
+When you chose another way
+My love will never stop shining
+in the sky you fly away
+\end{couplet}
+\begin{refrain}
+Fly young lullaby
+Follow your own sky
+Shine dear butterfly
+Please do not say goodbye  
+\end{refrain}
+\begin{couplet}
+When I was sad you came to me
+With a thousand smiles you gave to me free
+My shoulder will lie under your wing
+Together we’ll fly over your sea
+\end{couplet}
+\begin{refrain}
+Young lullaby
+Follow your own sky
+Shine dear butterfly
+Please do not say goodbye
+\end{refrain}
+\begin{pont}
+Fly
+Free your mind
+Don’t cry
+Find
+Your way to the bright side
+It’s time
+\end{pont}
+\begin{refrain}
+Young lullaby
+Follow your own sky
+Shine dear butterfly
+Please do not say goodbye
+\end{refrain}
+
+\end{song}
+
+\end{album}
+
 \begin{album}{Seasons}
 
+%   :::       ::: ::::::::::: ::::    ::: ::::::::::: :::::::::: :::::::::  
+% :+:       :+:     :+:     :+:+:   :+:     :+:     :+:        :+:    :+: 
+% +:+       +:+     +:+     :+:+:+  +:+     +:+     +:+        +:+    +:+ 
+% +#+  +:+  +#+     +#+     +#+ +:+ +#+     +#+     +#++:++#   +#++:++#:  
+% +#+ +#+#+ +#+     +#+     +#+  +#+#+#     +#+     +#+        +#+    +#+ 
+%  #+#+# #+#+#      #+#     #+#   #+#+#     #+#     #+#        #+#    #+# 
+%   ###   ###   ########### ###    ####     ###     ########## ###    ### 
+\begin{song}{Winter}
+\begin{couplet}
+Do you feel alive among the dead ?
+Do you think you're right and you're the same ?
+\end{couplet}
+\begin{refrain}
+Climbing down along the dreamer
+Slowly drifting into the winter
+\end{refrain}
+\begin{couplet}
+Can you wake up when you're not asleep ?
+The puppet master makes what you believe  
+\end{couplet}
+\begin{refrain}
+Sitting down deep into forever
+Slowly waking to the winter   
+\end{refrain}
+\begin{couplet}
+Sun arises colder than despair
+You and I and everyone are scared  
+\end{couplet}
+\begin{refrain}
+Walking on the bridge of the fallen
+Slowly deafening the winter  
+\end{refrain}
+\begin{pont}
+Building ice of knowledge
+Breathing air made of clay
+One day you'll remember
+How to come through the winter
+\end{pont}
+\begin{couplet}
+Do you feel alive among the dead ?
+\end{couplet}
+\begin{refrain}
+Climbing up along the dreamer
+Slowly living through the winter    
+\end{refrain}
+
+\end{song}
+
+%  ::::::::  :::::::::  :::::::::  ::::::::::: ::::    :::  ::::::::  
+% :+:    :+: :+:    :+: :+:    :+:     :+:     :+:+:   :+: :+:    :+: 
+% +:+        +:+    +:+ +:+    +:+     +:+     :+:+:+  +:+ +:+        
+% +#++:++#++ +#++:++#+  +#++:++#:      +#+     +#+ +:+ +#+ :#:        
+%        +#+ +#+        +#+    +#+     +#+     +#+  +#+#+# +#+   +#+# 
+% #+#    #+# #+#        #+#    #+#     #+#     #+#   #+#+# #+#    #+# 
+%  ########  ###        ###    ### ########### ###    ####  ########  
 \begin{song}{Spring}
 
 \begin{couplet}
