@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{verbatim}%
+
+\newenvironment{album}[1]% environment name
+{% begin code
+  \section*{#1}
+}%
+{% end code
+}
+
+\newenvironment{song}[1]% environment name
+{% begin code
+  \par\vspace{\baselineskip}\noindent
+  \textbf{#1}\begin{itshape}%
+  \par\vspace{\baselineskip}\noindent\ignorespaces
+}%
+{% end code
+  \end{itshape}\ignorespacesafterend
+}
+
+\newenvironment{couplet} %
+{% begin code
+  \verbatim
+}%
+{% end code
+  \endverbatim
+}
+
+\newenvironment{refrain} %
+{% begin code
+  \verbatim
+}%
+{% end code
+  \endverbatim
+}
+
+\begin{document}
+
+\begin{album}{Seasons}
+
+\begin{song}{Spring}
+
+\begin{couplet}
+A splitted path yet we will always belong
+Never the past will return
+From so long ago
+\end{couplet}
+
+\begin{refrain}
+I don't know where the future lies
+I don't know if we could have suffered through all of our lies
+I don't know if we could have been better off again
+But now i'm not afraid of the spring
+\end{refrain}
+
+\begin{couplet}
+So the decision's been made
+I did not know i was so ready to reach the end
+\end{couplet}
+
+\begin{refrain}
+I don't know if the future will bite
+I don't know if we can befriend and keep on holding tight
+I don't know if we could have been better off again
+But now i'm looking forward to the spring
+\end{refrain}
+
+\begin{couplet}
+I'll never fully understand what drove us apart
+As you didn't even know
+Now i'm Moving on embracing the life I will make up for myself
+\end{couplet}
+
+\begin{refrain}
+I don't know if we could have been better off again
+I don't know if we can befriend and win in the end
+Now i feel free to go wherever i feel i belong
+I hope the spring will last for long
+I hope the spring will last for long
+I hope the spring will last
+\end{refrain}
+
+\end{song}
+
+\end{album}
+
+
+\end{document}
