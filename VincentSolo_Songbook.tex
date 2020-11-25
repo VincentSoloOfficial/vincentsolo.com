@@ -1,10 +1,18 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 \usepackage{verbatim}
 \usepackage{multicol}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage[titles]{tocloft}
+\usepackage{hyperref}
+
+\geometry{a5paper, portrait, margin=1cm}
+\pagenumbering{gobble}
 
 \newenvironment{album}[1]% environment name
 {% begin code
   \section*{#1}
+  \addcontentsline{toc}{section}{#1}
 }%
 {% end code
 }
@@ -12,6 +20,7 @@
 \newenvironment{song}[1]% environment name
 {% begin code
   \subsection*{\textbf{#1}}
+  \addcontentsline{toc}{subsection}{#1}
   \begin{multicols*}{2}
 }%
 {% end code
@@ -20,6 +29,7 @@
 }
 \newenvironment{partie}[1]% environment name
 {% begin code
+  \setcounter{subsubsection}{0}
   \subsubsection{#1}
 }%
 {% end code
@@ -54,8 +64,25 @@
   \endverbatim
 }
 
+% Paramétrage de la table des matières
+\renewcommand{\contentsname}{Vincent Solo's songbook}
+\renewcommand{\cftdot}{}
+\setcounter{tocdepth}{2}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
 \begin{document}
 
+\begin{multicols*}{2}
+  \doublespacing
+  \tableofcontents
+  \singlespacing
+\end{multicols*}
 
 \begin{album}{Fleur de peau}
 
@@ -129,7 +156,6 @@ Nous connaissons tous ce voile
 Indélébile
 Viens nous retrouver sans peur
 Soigner les larmes de ton cœur
-
 S'élever un jour meilleur…
 \end{refrain}
 \end{song}
@@ -1482,7 +1508,7 @@ This glass prison tears me down
 \begin{couplet}
 Opening my eyes
 On that dark cold morning
-“Careful don’t be unwise”
+"Careful don’t be unwise"
 Some voice in my soul is speaking
 \end{couplet}
 \begin{refrain}
